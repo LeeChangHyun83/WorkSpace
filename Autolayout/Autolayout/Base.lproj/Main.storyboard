@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,27 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJL-O1-wUu">
-                                <rect key="frame" x="20" y="64" width="374" height="64.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Autolayout">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                        <color key="strokeColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKU-BP-elD">
-                                <rect key="frame" x="20" y="136" width="374" height="64.5"/>
+                                <rect key="frame" x="20" y="131.33333333333334" width="374" height="64.666666666666657"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Autolayout">
+                                <buttonConfiguration key="configuration" style="plain" title="Fire">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <color key="strokeColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-w4-kZS">
+                                <rect key="frame" x="20" y="296" width="374" height="64.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="name">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="strokeColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
+                                    <attributedString key="attributedSubtitle"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
@@ -44,18 +46,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DKU-BP-elD" firstAttribute="top" secondItem="NJL-O1-wUu" secondAttribute="bottom" constant="7.5" id="0AK-1H-Wxb"/>
-                            <constraint firstItem="DKU-BP-elD" firstAttribute="trailing" secondItem="NJL-O1-wUu" secondAttribute="trailing" id="LXn-1m-DrN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NJL-O1-wUu" secondAttribute="trailing" constant="20" id="ac2-db-4RN"/>
-                            <constraint firstItem="NJL-O1-wUu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dan-dA-cI1"/>
-                            <constraint firstItem="NJL-O1-wUu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wkP-gT-wKB"/>
-                            <constraint firstItem="DKU-BP-elD" firstAttribute="leading" secondItem="NJL-O1-wUu" secondAttribute="leading" id="yce-fX-b7p"/>
+                            <constraint firstItem="HsQ-w4-kZS" firstAttribute="top" secondItem="DKU-BP-elD" secondAttribute="bottom" constant="99.999999999999972" id="8Ab-vt-kCj"/>
+                            <constraint firstItem="DKU-BP-elD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Kx6-sq-Qua"/>
+                            <constraint firstItem="HsQ-w4-kZS" firstAttribute="trailing" secondItem="DKU-BP-elD" secondAttribute="trailing" id="Lgv-YH-gQj"/>
+                            <constraint firstItem="DKU-BP-elD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87.333333333333371" id="V7J-KO-b9l"/>
+                            <constraint firstItem="HsQ-w4-kZS" firstAttribute="leading" secondItem="DKU-BP-elD" secondAttribute="leading" id="V7K-hg-5xu"/>
+                            <constraint firstItem="DKU-BP-elD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gDu-aE-Xhe"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="-380"/>
+            <point key="canvasLocation" x="659" y="-433"/>
         </scene>
     </scenes>
     <resources>
@@ -64,9 +66,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
